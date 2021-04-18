@@ -54,15 +54,11 @@ function IndexNavbar() {
         <Container>
           <div className="navbar-translate">
             <NavbarBrand
-              href="https://demos.creative-tim.com/now-ui-kit-react/#/index?ref=nukr-index-navbar"
-              target="_blank"
+              to="/index" tag={Link}       
               id="navbar-brand"
             >
-              Now UI Kit React
+              Justbreeathe logo here
             </NavbarBrand>
-            <UncontrolledTooltip target="#navbar-brand">
-              Designed by Invision. Coded by Creative Tim
-            </UncontrolledTooltip>
             <button
               className="navbar-toggler navbar-toggler"
               onClick={() => {
@@ -83,20 +79,25 @@ function IndexNavbar() {
             navbar
           >
             <Nav navbar>
+
               <NavItem>
                 <NavLink
-                  href="#pablo"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    document
-                      .getElementById("download-section")
-                      .scrollIntoView();
-                  }}
+                  to="/index" tag={Link}
+                  id="navbar-link"
                 >
-                  <i className="now-ui-icons arrows-1_cloud-download-93"></i>
-                  <p>Download</p>
+                  <p>About Nani</p>
                 </NavLink>
               </NavItem>
+
+              <NavItem>
+                <NavLink
+                  to="/index" tag={Link}
+                  id="navbar-link"
+                >
+                  <p>What is Just Breeathe?</p>
+                </NavLink>
+              </NavItem>
+
               <UncontrolledDropdown nav>
                 <DropdownToggle
                   caret
@@ -106,40 +107,48 @@ function IndexNavbar() {
                   onClick={(e) => e.preventDefault()}
                 >
                   <i className="now-ui-icons design_app mr-1"></i>
-                  <p>Components</p>
+                  <p>Proposals</p>
                 </DropdownToggle>
                 <DropdownMenu>
                   <DropdownItem to="/index" tag={Link}>
                     <i className="now-ui-icons business_chart-pie-36 mr-1"></i>
-                    All components
+                    Individual Sessions
                   </DropdownItem>
                   <DropdownItem
-                    href="https://demos.creative-tim.com/now-ui-kit-react/#/documentation/introduction?ref=nukr-index-navbar"
-                    target="_blank"
+                    to="/index" tag={Link}
                   >
                     <i className="now-ui-icons design_bullet-list-67 mr-1"></i>
-                    Documentation
+                    Group Sessions
+                  </DropdownItem>
+                  <DropdownItem to="/index" tag={Link}>
+                    <i className="now-ui-icons business_chart-pie-36 mr-1"></i>
+                    Corporate
                   </DropdownItem>
                 </DropdownMenu>
               </UncontrolledDropdown>
-              <NavItem>
-                <Button
-                  className="nav-link btn-neutral"
-                  color="info"
-                  href="#pablo"
-                  id="upgrade-to-pro"
-                  onClick={(e) => e.preventDefault()}
-                >
-                  <i className="now-ui-icons arrows-1_share-66 mr-1"></i>
-                  <p>Upgrade to PRO</p>
-                </Button>
-                <UncontrolledTooltip target="#upgrade-to-pro">
-                  Cooming soon!
-                </UncontrolledTooltip>
-              </NavItem>
+
               <NavItem>
                 <NavLink
-                  href="https://twitter.com/CreativeTim?ref=creativetim"
+                  to="/index" tag={Link}
+                  id="navbar-link"
+                >
+                  <p>Testimonials</p>
+                </NavLink>
+              </NavItem>
+
+              <NavItem>
+                <NavLink
+                  to="/index" tag={Link}
+                  id="navbar-link"
+                >
+                  <p>Contact Us</p>
+                </NavLink>
+              </NavItem>
+
+
+              <NavItem>
+                <NavLink
+                  href="https://www.facebook.com/justbreathebarcelona"
                   target="_blank"
                   id="twitter-tooltip"
                 >
@@ -152,7 +161,7 @@ function IndexNavbar() {
               </NavItem>
               <NavItem>
                 <NavLink
-                  href="https://www.facebook.com/CreativeTim?ref=creativetim"
+                  href="https://www.facebook.com/justbreathebarcelona"
                   target="_blank"
                   id="facebook-tooltip"
                 >
@@ -165,7 +174,7 @@ function IndexNavbar() {
               </NavItem>
               <NavItem>
                 <NavLink
-                  href="https://www.instagram.com/CreativeTimOfficial?ref=creativetim"
+                  href="https://www.instagram.com/_justbreeathe_/"
                   target="_blank"
                   id="instagram-tooltip"
                 >

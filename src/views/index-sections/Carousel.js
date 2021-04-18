@@ -58,7 +58,7 @@ function CarouselSection() {
       <div className="section" id="carousel">
         <Container>
           <div className="title">
-            <h4>Carousel</h4>
+            <h4>Here we can put Pictures of the breathing sessions in a carousel</h4>
           </div>
           <Row className="justify-content-center">
             <Col lg="8" md="12">
